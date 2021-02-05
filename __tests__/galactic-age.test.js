@@ -10,8 +10,8 @@ describe('Person', () => {
     expect(person.earthAge).toEqual(30);
   });
 
-  test('should correctly construct a person with galactic ages', () => {
-    expect(person.galacticAges).toEqual({});
+  test('should correctly construct a person with galactic ages object', () => {
+    expect(typeof(person.galacticAges)).toEqual('object');
   });
 });
 
