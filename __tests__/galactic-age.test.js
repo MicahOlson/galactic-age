@@ -65,4 +65,9 @@ describe('Person.setGalacticLifeExpectancy', () => {
   test('should correctly return a life expectancy on a given planet', () => {
     expect(person.getGalacticLifeExpectancy('Mercury')).toEqual('Based on your gender and activity level, on Mercury you will live approximately 180 more years.');
   });
+
+  test('should correctly return a message for one who has outlived their life expectancy', () => {
+    let newPerson = new Person(78.1, 'Male', 'Sedentary');
+    expect(newPerson.getGalacticLifeExpectancy('Mercury')).toEqual('Based on your gender and activity level, you have already outlived your life expectancy on Mercury by 20 years.');
+  });
 });
