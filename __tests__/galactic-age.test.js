@@ -15,8 +15,12 @@ describe('Person', () => {
     expect(person.activityLevel).toEqual('Sedentary');
   })
 
-  test('should correctly construct a person with galactic ages object', () => {
+  test('should correctly construct a person with a galactic ages object', () => {
     expect(typeof(person.galacticAges)).toEqual('object');
+  });
+
+  test('should correctly construct a person with a galactic life expectancies object', () => {
+    expect(typeof(person.galacticLifeExpectancies)).toEqual('object');
   });
 });
 
