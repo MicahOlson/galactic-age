@@ -32,3 +32,9 @@ describe('Person.setGalacticAges()', () => {
     expect(person.galacticAges['Jupiter']).toBeCloseTo(2.53);
   });
 });
+
+describe('Person.getGalacticAge()', () => {
+  test('should correctly return the age of the user on a given planet', () => {
+    expect(person.getGalacticAge('Mercury')).toEqual('You are 125 years old on Mercury.')
+  })
+});

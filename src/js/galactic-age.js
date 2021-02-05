@@ -14,4 +14,6 @@ export class Person {
       this.galacticAges[planet] = this.earthAge / solarYears[planet];
     }
   }
+  getGalacticAge() {
+  }
 }
