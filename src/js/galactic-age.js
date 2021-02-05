@@ -41,6 +41,6 @@ export class Person {
   }
 
   setGalacticLifeExpectancies() {
-    
+    return this.convertSolarYears(this.setEarthLifeExpectancy(this.gender, this.activityLevel));
   }
 }
