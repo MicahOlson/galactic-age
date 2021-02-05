@@ -39,4 +39,8 @@ export class Person {
     }
     return earthLifeExpectancy;
   }
+
+  setGalacticLifeExpectancies() {
+    
+  }
 }

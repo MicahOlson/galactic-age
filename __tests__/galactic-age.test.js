@@ -49,3 +49,10 @@ describe('Person.setEarthLifeExpectancy', () => {
     expect(person.setEarthLifeExpectancy('Male', 'Sedentary')).toEqual(73.1);
   });
 });
+
+describe('Person.setGalacticLifeExpectancies', () => {
+  test('should correctly return an object of galactic life expectancies', () => {
+    const galacticLifeExpectancies = person.setGalacticLifeExpectancies();
+    expect(galacticLifeExpectancies['Earth']).toEqual(73.1);
+  });
+});
