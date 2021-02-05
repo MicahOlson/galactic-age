@@ -4,6 +4,7 @@ export class Person {
     this.gender = gender;
     this.activityLevel = activityLevel;
     this.galacticAges = this.setGalacticAges();
+    this.galacticLifeExpectancies = this.setGalacticLifeExpectancies();
   }
 
   convertSolarYears(earthYears) {
