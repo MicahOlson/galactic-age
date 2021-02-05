@@ -23,4 +23,10 @@ describe('Person', () => {
     person.setGalacticAges();
     expect(person.galacticAges['Venus']).toBeCloseTo(48.387);
   });
+
+  test('should correctly calc age on Mars and Jupiter and add to galacticAges', () => {
+    person.setGalacticAges();
+    expect(person.galacticAges['Mars']).toBeCloseTo(15.957);
+    expect(person.galacticAges['Jupiter']).toBeCloseTo(2.53);
+  });
 });
