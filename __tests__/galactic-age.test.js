@@ -15,7 +15,7 @@ describe('Person', () => {
   });
 });
 
-describe('Person.setGalacticAges()', () => {
+describe('Person.convertSolarYears()', () => {
   test('should correctly calc age on Mercury and add to galacticAges', () => {
     person.convertSolarYears(person.earthAge);
     expect(person.galacticAges['Mercury']).toBeCloseTo(125);
@@ -35,6 +35,12 @@ describe('Person.setGalacticAges()', () => {
 
 describe('Person.getGalacticAge()', () => {
   test('should correctly return the age of the user on a given planet', () => {
-    expect(person.getGalacticAge('Mercury')).toEqual('You are 125 years old on Mercury.')
+    expect(person.getGalacticAge('Mercury')).toEqual('You are 125 years old on Mercury.');
   })
 });
+
+describe('Person.setEarthLifeExpectancy', () => {
+  test('should correctly set an earth-age life expectancy', () => {
+    expect(person.setEarthLifeExpectancy('Male', 'Sedentary')).toEqual(73.1);
+  })
+})

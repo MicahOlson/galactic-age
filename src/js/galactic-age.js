@@ -22,4 +22,7 @@ export class Person {
   getGalacticAge(planet) {
     return `You are ${Math.floor(this.galacticAges[planet])} years old on ${planet}.`;
   }
+
+  setEarthLifeExpectancy() {
+  }
 }
