@@ -20,5 +20,5 @@ OPTION 1
   - conditionals?
 
 OPTION 2
-- Create galaxy class with all planet's solar years
-- method would take user's age and return new age set for all planets
+- Create galaxy class with all planets' solar years
+- method would take user's age and return new age (full-set?) for all planets
