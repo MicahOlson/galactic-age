@@ -4,6 +4,12 @@ export class Person {
     this.galacticAges = {};
   }
   setGalacticAges() {
-    this.galacticAges['Mercury'] = this.earthAge / .24;
+    const solarYears = {
+      'Mercury': .24,
+      'Venus': .62,
+    }
+    for (const planet in solarYears) {
+      this.galacticAges[planet] = this.earthAge / solarYears[planet];
+    }
   }
 }
