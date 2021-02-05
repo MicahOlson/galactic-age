@@ -13,7 +13,9 @@ describe('Person', () => {
   test('should correctly construct a person with galactic ages', () => {
     expect(person.galacticAges).toEqual({});
   });
+});
 
+describe('Person.setGalacticAges()', () => {
   test('should correctly calc age on Mercury and add to galacticAges', () => {
     person.setGalacticAges();
     expect(person.galacticAges['Mercury']).toBeCloseTo(125);
