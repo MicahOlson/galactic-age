@@ -45,7 +45,8 @@ export class Person {
     return this.convertSolarYears(this.setEarthLifeExpectancy(this.gender, this.activityLevel));
   }
 
-  getGalacticLifeExpectancy() {
-    
+  getGalacticLifeExpectancy(planet) {
+    const yearsToLive =  Math.ceil(this.galacticLifeExpectancies[planet] - this.galacticAges[planet]);
+    return `Based on your gender and activity level, on ${planet} you will live approximately ${yearsToLive} more years.`;
   }
 }
