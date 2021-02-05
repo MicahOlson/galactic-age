@@ -1,21 +1,22 @@
 export class Person {
   constructor(age) {
     this.earthAge = age;
-    this.galacticAges = this.setGalacticAges();
+    this.galacticAges = this.convertSolarYears(this.earthAge);
   }
 
-  setGalacticAges() {
+  convertSolarYears(earthYears) {
     const solarYears = {
-      'Mercury':   .24,
-      'Venus':     .62,
-      'Mars':     1.88,
-      'Jupiter': 11.86
+    'Mercury':   .24,
+    'Venus':     .62,
+    'Earth':       1,
+    'Mars':     1.88,
+    'Jupiter': 11.86
     }
-    let galacticAges = {};
+    let converted = {};
     for (const planet in solarYears) {
-      galacticAges[planet] = this.earthAge / solarYears[planet];
+      converted[planet] = earthYears / solarYears[planet];
     }
-    return galacticAges;
+    return converted;
   }
 
   getGalacticAge(planet) {
