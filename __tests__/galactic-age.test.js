@@ -15,19 +15,19 @@ describe('Person', () => {
   });
 });
 
-describe('Person.convertSolarYears()', () => {
+describe('Person.setGalacticAges()', () => {
   test('should correctly calc age on Mercury and add to galacticAges', () => {
-    person.convertSolarYears(person.earthAge);
+    person.setGalacticAges();
     expect(person.galacticAges['Mercury']).toBeCloseTo(125);
   });
 
   test('should correctly calc age on Venus and add to galacticAges', () => {
-    person.convertSolarYears(person.earthAge);
+    person.setGalacticAges();
     expect(person.galacticAges['Venus']).toBeCloseTo(48.387);
   });
 
   test('should correctly calc age on Mars and Jupiter and add to galacticAges', () => {
-    person.convertSolarYears(person.earthAge);
+    person.setGalacticAges();
     expect(person.galacticAges['Mars']).toBeCloseTo(15.957);
     expect(person.galacticAges['Jupiter']).toBeCloseTo(2.53);
   });
