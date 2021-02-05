@@ -4,5 +4,6 @@ export class Person {
     this.galacticAges = {};
   }
   setGalacticAges() {
+    this.galacticAges['Mercury'] = this.earthAge / .24;
   }
 }
