@@ -1,6 +1,8 @@
 export class Person {
-  constructor(age) {
+  constructor(age, gender, activityLevel) {
     this.earthAge = age;
+    this.gender = gender;
+    this.activityLevel = activityLevel;
     this.galacticAges = this.setGalacticAges();
   }
 
