@@ -3,4 +3,6 @@ export class Person {
     this.earthAge = age;
     this.galacticAges = {};
   }
+  setGalacticAges() {
+  }
 }
