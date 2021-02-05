@@ -14,6 +14,8 @@ export class Person {
       this.galacticAges[planet] = this.earthAge / solarYears[planet];
     }
   }
-  getGalacticAge() {
+  getGalacticAge(planet) {
+    this.setGalacticAges();
+    return `You are ${Math.floor(this.galacticAges[planet])} years old on ${planet}.`;
   }
 }
