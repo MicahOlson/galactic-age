@@ -30,19 +30,19 @@ export class Person {
     return `You are ${Math.floor(this.galacticAges[planet])} years old on ${planet}.`;
   }
 
-  setEarthLifeExpectancy(gender, activityLevel) {
+  setEarthLifeExpectancy() {
     let earthLifeExpectancy = 81.1;
-    if (gender === 'Male') {
+    if (this.gender === 'Male') {
       earthLifeExpectancy -= 5;
     }
-    if (activityLevel === 'Sedentary') {
+    if (this.activityLevel === 'Sedentary') {
       earthLifeExpectancy -= 3;
     }
     return earthLifeExpectancy;
   }
 
   setGalacticLifeExpectancies() {
-    return this.convertSolarYears(this.setEarthLifeExpectancy(this.gender, this.activityLevel));
+    return this.convertSolarYears(this.setEarthLifeExpectancy());
   }
 
   getGalacticLifeExpectancy(planet) {
