@@ -47,6 +47,10 @@ export class Person {
 
   getGalacticLifeExpectancy(planet) {
     const yearsToLive =  Math.ceil(this.galacticLifeExpectancies[planet] - this.galacticAges[planet]);
-    return `Based on your gender and activity level, on ${planet} you will live approximately ${yearsToLive} more years.`;
+    if (yearsToLive >= 0) {
+      return `Based on your gender and activity level, on ${planet} you will live approximately ${yearsToLive} more years.`;
+    } else {
+      return `Based on your gender and activity level, you have already outlived your life expectancy on ${planet} by ${Math.abs(yearsToLive)} years.`
+    }
   }
 }
