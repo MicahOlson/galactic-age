@@ -48,20 +48,20 @@ describe('Person.getGalacticAge()', () => {
   });
 });
 
-describe('Person.getEarthLifeExpectancy', () => {
+describe('Person.getEarthLifeExpectancy()', () => {
   test('should correctly set an earth-age life expectancy', () => {
     expect(person.getEarthLifeExpectancy('Male', 'Sedentary')).toEqual(73.1);
   });
 });
 
-describe('Person.setGalacticLifeExpectancies', () => {
+describe('Person.setGalacticLifeExpectancies()', () => {
   test('should correctly return an object of galactic life expectancies', () => {
     const galacticLifeExpectancies = person.setGalacticLifeExpectancies();
     expect(galacticLifeExpectancies['Earth']).toEqual(73.1);
   });
 });
 
-describe('Person.setGalacticLifeExpectancy', () => {
+describe('Person.setGalacticLifeExpectancy()', () => {
   test('should correctly return a life expectancy on a given planet', () => {
     expect(person.getGalacticLifeExpectancy('Mercury')).toEqual('Based on your gender and activity level, on Mercury you will live approximately 180 more years.');
   });
