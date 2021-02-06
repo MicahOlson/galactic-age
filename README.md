@@ -16,11 +16,9 @@
 * Jest 24.9.0
 
 ## Description
-Enter your age and select a planet and we'll tell you what your age would be on that planet based its solar year.  
+Enter your age and select a planet and we'll tell you what your age would be on that planet based on its solar year.  Answering a couple additional questions will help us determine your life expectancy and you'll see how that changes on different planets.   
 
 ## Setup and Installation
-* This project's interactive web page can be viewed [here](https://micaholson.github.io/galactic-age).  
-
 * To download, then view or edit a local copy yourself, follow the instructions below:  
 
   * Clone the repository to a local directory using the command-line tool `git` ([how to install git](https://www.learnhowtoprogram.com/introduction-to-programming/getting-started-with-intro-to-programming/git-and-github)).  
@@ -29,11 +27,21 @@ Enter your age and select a planet and we'll tell you what your age would be on 
   
   * Navigate to the top level of the project directory.  
     `$ cd galactic-age/`   
+  
+  * Install all application dependencies using `npm` (node package manager) ([how to install npm](https://www.learnhowtoprogram.com/intermediate-javascript/getting-started-with-javascript/installing-node-js)).  
+    `$ npm install`
 
-  * To view the site locally, open the file called `index.html` in your default browser.  
+  * Then build a distribution bundle by running the following. This will create the version of `index.html` you will access as discussed below.  
+    `$ npm run build`
+
+  * To view the site locally, start the preconfigured development server to automatically launch the site in your default browser.  
+    `$ npm run start`
+    
+    * You could also open the file called `index.html` in the project's `dist/` subdirectory to view a static version.  
+    `$ cd dist/`  
     `$ open index.html`  
 
-    * Alternatively, you can navigate to the project directory through your system's GUI file manager, then double-click `index.html` to open it in your default browser.  
+    * Alternatively, you can navigate to these project directories through your system's GUI file manager, then double-click `index.html` to open it in your default browser.  
 
   * To edit the project, open the files in your preferred code editor. Here are some recommendations:
     * [Visual Studio Code](https://code.visualstudio.com) - "Code editing. Redefined."
@@ -41,7 +49,7 @@ Enter your age and select a planet and we'll tell you what your age would be on 
     * [SublimeText](https://www.sublimetext.com) - "A sophisticated text editor for code, markup and prose"  
 
 ## Known Bugs
-* The 'place order' feature is only intended to simulate placing an order, it does not actually do so.
+* No known bugs.
 * If you find a bug, please report it to me at the email address below.
 
 ## License
