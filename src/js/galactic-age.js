@@ -9,12 +9,12 @@ export class Person {
 
   convertSolarYears(earthYears) {
     const solarYears = {
-    'Mercury':   .24,
-    'Venus':     .62,
-    'Earth':       1,
-    'Mars':     1.88,
-    'Jupiter': 11.86
-    }
+      'Mercury':   .24,
+      'Venus':     .62,
+      'Earth':       1,
+      'Mars':     1.88,
+      'Jupiter': 11.86
+    };
     let converted = {};
     for (const planet in solarYears) {
       converted[planet] = earthYears / solarYears[planet];
@@ -50,7 +50,7 @@ export class Person {
     if (yearsToLive >= 0) {
       return `Based on your gender and activity level, on ${planet} you will live approximately ${yearsToLive} more years.`;
     } else {
-      return `Based on your gender and activity level, you have already outlived your life expectancy on ${planet} by ${Math.abs(yearsToLive)} years.`
+      return `Based on your gender and activity level, you have already outlived your life expectancy on ${planet} by ${Math.abs(yearsToLive)} years.`;
     }
   }
 }
