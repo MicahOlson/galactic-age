@@ -1,4 +1,4 @@
-import { Person } from '../src/js/galactic-age.js';
+import Person from '../src/js/galactic-age.js';
 
 let person;
 beforeEach(() => {
