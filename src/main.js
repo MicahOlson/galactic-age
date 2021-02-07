@@ -12,6 +12,6 @@ $("form#userInput").submit((event) => {
   const activityLevel = $("input:radio[name=activityRadios]:checked").val();
   
   const user = new Person(age, gender, activityLevel);
-  $("#result").text(user.getGalacticAge(planet));
-  
+  $("#galacticAge").text(user.getGalacticAge(planet));
+  $("#lifeExpectancyResult").text(user.getGalacticLifeExpectancy(planet));
 });
