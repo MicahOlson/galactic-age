@@ -27,7 +27,7 @@ export default class Person {
   }
 
   getGalacticAge(planet) {
-    return `You are ${Math.floor(this.galacticAges[planet])} years old on ${planet}.`;
+    return `You are ${Math.round(this.galacticAges[planet])} years old on ${planet}.`;
   }
 
   getEarthLifeExpectancy() {
@@ -46,7 +46,7 @@ export default class Person {
   }
 
   getGalacticLifeExpectancy(planet) {
-    const yearsToLive =  Math.ceil(this.galacticLifeExpectancies[planet] - this.galacticAges[planet]);
+    const yearsToLive =  Math.round(this.galacticLifeExpectancies[planet] - this.galacticAges[planet]);
     if (yearsToLive >= 0) {
       return `Based on your gender and activity level, on ${planet} you will live approximately ${yearsToLive} more years.`;
     } else {

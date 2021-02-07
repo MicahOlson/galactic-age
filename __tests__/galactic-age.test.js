@@ -68,6 +68,6 @@ describe('Person.setGalacticLifeExpectancy()', () => {
 
   test('should correctly return a message for one who has outlived their life expectancy', () => {
     let newPerson = new Person(78.1, 'Male', 'Sedentary');
-    expect(newPerson.getGalacticLifeExpectancy('Mercury')).toEqual('Based on your gender and activity level, you have already outlived your life expectancy on Mercury by 20 years.');
+    expect(newPerson.getGalacticLifeExpectancy('Mercury')).toEqual('Based on your gender and activity level, you have already outlived your life expectancy on Mercury by 21 years.');
   });
 });
