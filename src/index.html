@@ -11,9 +11,11 @@
 <body>
   <div class="container">
     <h1>Super Galactic Age Calculator</h1>
+    <h2>Calculate your age on a different planet</h2>
+    <p>Welcome to the super galactic age calculator! Enter your age, gender and activity level, and select a planet, and we'll convert your age and let you know your life expectancy.</p>
     <div class="row">
       <div class="col-md-6">
-        <h2>Age Calculator</h2>
+        <h3>Age Calculator</h3>
         <form id="userInput">
           <div class="form-group row">
             <label for="ageInput" class="col-md-5 col-form-label col-form-label-lg">Enter your age</label>
@@ -45,9 +47,9 @@
 
     <div class="row">
       <div class="col-md-6">
-        <h2>Life Expectancy Factors</h2>
+        <h3>Life Expectancy Factors</h3>
         <div class="form-group row">
-          <label class="col-form-label-lg col-md-5">Select a gender</label>
+          <label class="col-form-label-lg col-md-5">Select your gender</label>
           <div class="col-md-7">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="genderRadios" id="genderRadios1" value="Female"
@@ -71,7 +73,7 @@
           </div>
         </div>
         <div class="form-group row">
-          <label class="col-form-label-lg col-md-5">Select an activity level</label>
+          <label class="col-form-label-lg col-md-5">Your activity level</label>
           <div class="col-md-7">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="activityRadios" id="activityRadios1" value="Active"
@@ -95,9 +97,17 @@
 
       <div class="col-md-6">
         <label class="col-form-label-lg" id="lifeExpectancyResult"></label>
-        <table>
-          <!-- to come from main.js -->
-        </table>
+        <label class="col-form-label-lg" id="seeAllLink">See stats for all planets</label>
+        <div id="allStats">
+          <table id="statsTable">
+            <tr>
+              <th>Planet</th>
+              <th>Age</th>
+              <th>Life Expectancy</th>
+            </tr>
+            <!-- to be appended by main.js -->
+          </table>
+        </div>
       </div>
 
     </div>
