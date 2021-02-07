@@ -1,10 +1,45 @@
 body {
-  /* background-color: hsl(0, 0%, 25%); */
   background-image: url("../assets/images/background.jpg");
   color: hsl(0, 0%, 100%);
   text-shadow: 2px 2px hsl(0, 0%, 0%);
 }
 
+h1, h3, h4, button {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-bottom: 60px;
+}
+
+#galacticAge, #lifeExpectancyResult, #seeAllLink {
+  margin-left: 60px;
+}
+
+#seeAllLink {
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+ }
+ 
+ #seeAllLink:hover {
+   text-decoration: underline;
+ }
+
 #seeAllLink, #allStats {
   display: none;
+}
+
+table, th, td {
+  border: 1px solid hsl(0, 0%, 100%);
+  border-collapse: collapse;
+}
+
+td {
+  width: 33%;
+  padding: 2px;
+}
+
+table#statsTable {
+  margin-left: auto;
+  margin-right: auto;
 }

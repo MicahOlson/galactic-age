@@ -11,8 +11,8 @@
 <body>
   <div class="container">
     <h1>Super Galactic Age Calculator</h1>
-    <h2>Calculate your age on a different planet</h2>
-    <p>Welcome to the super galactic age calculator! Enter your age, gender and activity level, and select a planet, and we'll convert your age and let you know your life expectancy.</p>
+    <h2><i>Calculate your age on a different planet</i></h2>
+    <p>Welcome to the super galactic age calculator! Enter your age, gender and activity level, and select a planet, and we'll convert your age to what it would be on that planet and let you know your life expectancy.</p>
     <div class="row">
       <div class="col-md-6">
         <h3>Age Calculator</h3>
@@ -39,7 +39,9 @@
       </div>
 
       <div class="col-md-6">
-        <label class="col-form-label-lg" id="galacticAge"></label>
+        <h4 class="col-form-label-lg" id="galacticAge">
+          <!-- to be populated by main.js -->
+        </h4>
       </div>
     </div>
 
@@ -96,8 +98,8 @@
       </form>
 
       <div class="col-md-6">
-        <label class="col-form-label-lg" id="lifeExpectancyResult"></label>
-        <label class="col-form-label-lg" id="seeAllLink">See stats for all planets</label>
+        <h4 class="col-form-label-lg" id="lifeExpectancyResult"></h4>
+        <h4 class="col-form-label-lg" id="seeAllLink">Click here to see stats for all planets</h4>
         <div id="allStats">
           <table id="statsTable">
             <tr>
