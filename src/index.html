@@ -1,14 +1,94 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galactic Age</title>
 </head>
+
 <body>
   <div class="container">
     <h1>Super Galactic Age Calculator</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group row">
+            <label for="ageInput" class="col-md-5 col-form-label col-form-label-lg">Enter your age</label>
+            <div class="col-md-7">
+              <input type="number" class="form-control form-control-lg" id="ageInput" required>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="planetSelect" class="col-form-label-lg col-md-5">Select a planet</label>
+            <div class="col-md-7">
+              <select class="form-control form-control-lg" id="planetSelect" required>
+                <option value=""></option>
+                <option value="Mercury">Mercury</option>
+                <option value="Venus">Venus</option>
+                <option value="Mars">Mars</option>
+                <option value="Jupiter">Jupiter</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-form-label-lg col-md-5">Select a gender</label>
+            <div class="col-md-7">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="genderRadios" id="genderRadios1" value="Female"
+                  required>
+                <label class="form-check-label-lg" for="genderRadios1">
+                  Female
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="genderRadios" id="genderRadios2" value="Male">
+                <label class="form-check-label-lg" for="genderRadios2">
+                  Male
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="genderRadios" id="genderRadios3" value="Non-binary">
+                <label class="form-check-label-lg" for="genderRadios2">
+                  Non-binary
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-form-label-lg col-md-5">Select an activity level</label>
+            <div class="col-md-7">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="activityRadios" id="activityRadios1" value="Active"
+                  required>
+                <label class="form-check-label" for="activityRadios1">
+                  Active
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="activityRadios" id="activityRadios2"
+                  value="Sedentary">
+                <label class="form-check-label" for="activityRadios2">
+                  Sedentary
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-dark">Submit</button>
+
+        </form>
+      </div>
+      <div class="col-md-6">
+        <table>
+          <!-- to come from main.js -->
+        </table>
+      </div>
+    </div>
   </div>
 </body>
+
 </html>
