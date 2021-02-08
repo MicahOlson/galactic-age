@@ -49,8 +49,15 @@ describe('Person.getGalacticAge()', () => {
 });
 
 describe('Person.getEarthLifeExpectancy()', () => {
-  test('should correctly set an earth-age life expectancy', () => {
-    expect(person.getEarthLifeExpectancy('Male', 'Sedentary')).toEqual(73.1);
+  test('should correctly set an earth-age life expectancy if male and sedentary', () => {
+    expect(person.getEarthLifeExpectancy()).toEqual(73.1);
+  });
+});
+
+describe('Person.getEarthLifeExpectancy()', () => {
+  test('should correctly set an earth-age life expectancy if not male and sedentary', () => {
+    let nonMale = new Person(30);
+    expect(nonMale.getEarthLifeExpectancy()).toEqual(81.1);
   });
 });
 

@@ -31,14 +31,7 @@ export default class Person {
   }
 
   getEarthLifeExpectancy() {
-    let earthLifeExpectancy = 81.1;
-    if (this.gender === 'Male') {
-      earthLifeExpectancy -= 5;
-    }
-    if (this.activityLevel === 'Sedentary') {
-      earthLifeExpectancy -= 3;
-    }
-    return earthLifeExpectancy;
+
   }
 
   setGalacticLifeExpectancies() {
