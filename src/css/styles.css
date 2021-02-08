@@ -12,8 +12,16 @@ h2 {
   margin-bottom: 60px;
 }
 
+hr {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
+  height: 1px;
+}
+
 #galacticAge, #lifeExpectancyResult, #seeAllLink {
   margin-left: 60px;
+  padding: 20px;
+  background-color: hsl(0, 0%, 25%, 0.5);
 }
 
 #seeAllLink {
@@ -25,21 +33,22 @@ h2 {
    text-decoration: underline;
  }
 
-#seeAllLink, #allStats {
+#results, #seeAllLink, #statsTable {
   display: none;
 }
 
 table, th, td {
   border: 1px solid hsl(0, 0%, 100%);
   border-collapse: collapse;
+  background-color: hsl(0, 0%, 25%, 0.5);
 }
 
-td {
-  width: 33%;
-  padding: 2px;
+th, td {
+  width: 25%;
+  padding: 4px;
 }
 
 table#statsTable {
-  margin-left: auto;
+  margin-left: 60px;
   margin-right: auto;
 }

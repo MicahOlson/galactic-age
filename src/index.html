@@ -12,20 +12,28 @@
   <div class="container">
     <h1>Super Galactic Age Calculator</h1>
     <h2><i>Calculate your age on a different planet</i></h2>
-    <p>Welcome to the super galactic age calculator! Enter your age, gender and activity level, and select a planet, and we'll convert your age to what it would be on that planet and let you know your life expectancy.</p>
+    <p>
+      Welcome to the super galactic age calculator! Enter your age, gender
+      and activity level, and select a planet, and we'll convert your age to
+      what it would be on that planet and let you know your life expectancy.
+    </p>
     <div class="row">
       <div class="col-md-6">
         <h3>Age Calculator</h3>
         <form id="userInput">
           <div class="form-group row">
-            <label for="ageInput" class="col-md-5 col-form-label col-form-label-lg">Enter your age</label>
+            <label for="ageInput" class="col-md-5 col-form-label col-form-label-lg">
+              Enter your age
+            </label>
             <div class="col-md-7">
               <input type="number" class="form-control" id="ageInput" required>
             </div>
           </div>
 
           <div class="form-group row">
-            <label for="planetSelect" class="col-form-label-lg col-md-5">Select a planet</label>
+            <label for="planetSelect" class="col-form-label-lg col-md-5">
+              Select a planet
+            </label>
             <div class="col-md-7">
               <select class="form-control" id="planetSelect" required>
                 <option value=""></option>
@@ -38,8 +46,11 @@
           </div>
       </div>
 
-      <div class="col-md-6">
-        <h4 class="col-form-label-lg" id="galacticAge">
+      <div class="col-md-6" id="results">
+        <h4 id="galacticAge">
+          <!-- to be populated by main.js -->
+        </h4>
+        <h4 id="lifeExpectancyResult">
           <!-- to be populated by main.js -->
         </h4>
       </div>
@@ -74,6 +85,7 @@
             </div>
           </div>
         </div>
+        
         <div class="form-group row">
           <label class="col-form-label-lg col-md-5">Your activity level</label>
           <div class="col-md-7">
@@ -98,14 +110,14 @@
       </form>
 
       <div class="col-md-6">
-        <h4 class="col-form-label-lg" id="lifeExpectancyResult"></h4>
-        <h4 class="col-form-label-lg" id="seeAllLink">Click here to see stats for all planets</h4>
-        <div id="allStats">
+        <h5 id="seeAllLink"><i>Click here to see stats for all available planets</i></h5>
+        <div>
           <table id="statsTable">
             <tr>
               <th>Planet</th>
-              <th>Age</th>
-              <th>Life Expectancy</th>
+              <th>Your Age</th>
+              <th>Your Life Expectancy</th>
+              <th>Years Left to Live</th>
             </tr>
             <!-- to be appended by main.js -->
           </table>
