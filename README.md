@@ -18,7 +18,11 @@
 * Markdown 1.0.1
 
 ## Description
-Enter your age and select a planet and we'll tell you what your age would be on that planet based on its solar year.  Answering a couple additional questions will help us determine your life expectancy and you'll see how that changes on different planets.   
+Enter your age and select a planet and we'll tell you what your age would be on that planet based on its solar year.  Answering a couple additional questions will help us determine your life expectancy and you'll see how that changes on different planets. 
+  
+<p align="center">
+  <img src="src/assets/images/preview.png" alt="A preview of Super Galactic Age Calculator" width="80%">
+</p>
 
 ## Setup and Installation
 * **Clone the repository** to a local directory using the command-line tool `git` ([how to install git](https://www.learnhowtoprogram.com/introduction-to-programming/getting-started-with-intro-to-programming/git-and-github)).  
