@@ -5,7 +5,7 @@ beforeEach(() => {
   person = new Person(30, 'Male', 'Sedentary');
 });
 
-describe('Person', () => {
+describe('Person class constructor', () => {
   test('should correctly construct a person object with an earth age', () => {
     expect(person.earthAge).toEqual(30);
   });
@@ -66,7 +66,7 @@ describe('Person.setGalacticLifeExpectancies()', () => {
   });
 });
 
-describe('Person.setGalacticLifeExpectancy()', () => {
+describe('Person.getGalacticLifeExpectancy()', () => {
   test('should correctly return a life expectancy on a given planet', () => {
     expect(person.getGalacticLifeExpectancy('Mercury')).toEqual('Based on your gender and activity level, on Mercury you will live approximately 180 more years.');
   });
