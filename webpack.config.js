@@ -1,57 +1,45 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/main.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
   },
   devtool: 'eval-source-map',
   devServer: {
-    contentBase: './dist'
+    static: './dist',
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new ESLintPlugin(),
     new HtmlWebpackPlugin({
       title: 'Galactic Age',
       template: './src/index.html',
-      inject: 'body'
-    })
+      inject: 'body',
+    }),
   ],
   module: {
     rules: [
       {
-        test: /\.(gif|png|jpe?g)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'assets/images/'
-            }
-          }
-        ]
+        test: /\.(png|svg|jpe?g|gif)$/i,
+        type: 'asset/resource',
       },
       {
         test: /\.html$/,
-        use: [
-          'html-loader'
-        ]
+        use: ['html-loader'],
       },
       {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "eslint-loader"
-      }
-    ]
-  }
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      },
+    ],
+  },
 };
